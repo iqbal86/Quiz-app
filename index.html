@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interactive JavaScript Quiz</title> <!--title of the page-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> <!--link to global google fonts-->
+		<link href="css/style.css" rel="stylesheet"> <!--link to an external css file-->
+	</head>
+	<body>	
+	
+		<div id="Container" class="container">  <!--page container-->
+		
+			<div class="title">Interactive JavaScript Quiz</div> <!--quiz title-->
+			
+			<div id ="textForm" class="textform" style ="display:none;"> <!--content for text box input-->
+			<div id="question2" class="question2"></div> <!--questions-->
+			<label class="optionA"><span id="optA"></span></label> <!-- multiple choice questions populated in javascript-->
+			<label class="optionA"><span id="optB"></span></label>
+			<label class="optionA"><span id="optC"></span></label>
+			<label class="optionA"><span id="optD"></span></label>
+			<input type="text" name="Iqbal" value="" />
+			</div>
+			
+			<div id="question" class="question"></div>  <!--content for radio input-->
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label> <!--multiple choice questions populated in javascript-->
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+		
+			
+			<button id="nextButton" class="next-btn" onclick="NextQuestion();">Next Question</button> <!--button to validate the answer-->			
+		</div> <!--end of page container-->
+		
+		<div id="result" class="container result" style="display:none;"> <!--Id element for results which will populated later from javascript--> 
+		</div>
+		
+		<script src="script/questions.js"></script> <!--links to an external javascript files-->
+		<script src="script/script.js"></script>
+		
+		
+		<footer> <!--footer opening tag-->
+		<p>&copy; 2018 copyright all right reserved, <a href="mailto:iqbal86@live.com">iqbal86@live.com</a></p>	<!--paragraphs with mailto attribute-->	
+		</footer>
+	
+	</body> 	<!--end of body tag-->
+</html>			<!--end of html tag-->
